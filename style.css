@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFC0CB;
+  font-family: 'Comic Sans MS', cursive;
+  color: deeppink;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.imagen img {
+  width: 300px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.botones button {
+  background-color: #ff8fa3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.heart-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  color: red;
+  font-size: 24px;
+  animation: float 10s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.5);
+    opacity: 0;
+  }
+}
